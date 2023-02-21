@@ -1,0 +1,20 @@
+/* Mobile */
+@media (max-width: 739px) {
+  .container {
+    margin: 20px 8px;
+  }
+
+  .btn {
+    min-width: 80px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .shorten-link__input,
+  .replace__input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}

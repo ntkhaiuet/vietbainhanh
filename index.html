@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fonts/segoe-ui-4-cufonfonts-webfont/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Viết bài nhanh</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/null/hand-with-pen.png">
+</head>
+
+<body>
+    <div class="main">
+        <div class="grid wide">
+            <div class="container">
+                <div class="content">
+                    <h4 class="heading">Hỗ trợ viết bài nhanh</h4>
+                    <div class="tool-icon">
+                        <i id="uppercase" class="fa-solid fa-a" title="Chuyển tiêu đề thành chữ in hoa"></i>
+                        <i id="copy" class="fa-regular fa-copy" title="Sao chép toàn bộ bài viết"></i>
+                        <i id="download" class="fa-solid fa-file-arrow-down" title="Download bài viết"></i>
+                    </div>
+
+                    <textarea class="textarea" placeholder="Nhập bài viết"></textarea>
+
+                    <div class="common-icon">
+                        <input id="lua" class="icon" type="button" value="🔥"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="phao" class="icon" type="button" value="🎉"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="loa" class="icon" type="button" value="🔊"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="dongho" class="icon" type="button" value="⏰"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="tich" class="icon" type="button" value="✅"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="danhsach" class="icon" type="button" value="📄"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="ghim" class="icon" type="button" value="🔗"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="dinh" class="icon" type="button" value="📌"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="chuy" class="icon" type="button" value="❗"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="dienthoai" class="icon" type="button" value="📞"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="mail" class="icon" type="button" value="📧"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="cam" class="icon" type="button" value="🔸"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="xanh" class="icon" type="button" value="🔹"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="tay" class="icon" type="button" value="👉"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="mot" class="icon" type="button" value="1️⃣"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="hai" class="icon" type="button" value="2️⃣"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="ba" class="icon" type="button" value="3️⃣"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="bon" class="icon" type="button" value="4️⃣"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="nam" class="icon" type="button" value="5️⃣"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                        <input id="sau" class="icon" type="button" value="6️⃣"
+                            title="Nhấn để thay thế văn bản đã chọn hoặc thêm icon vào vị trí con trỏ chuột"
+                            data-toggle="tooltip" data-placement="top">
+                    </div>
+
+                    <div class="shorten-link">
+                        <span class="label">Rút gọn link</span>
+                        <input type="text" class="shorten-link__input" placeholder="Nhập link cần rút gọn">
+                        <div class="btn shorten-link__btn">Rút gọn</div>
+                    </div>
+
+                    <div class="search">
+                        <span class="label">Tìm kiếm</span>
+                        <input type="text" class="replace__input" placeholder="Tìm từ để thay thế">
+                        <div class="btn search__btn">Tìm kiếm</div>
+                    </div>
+
+                    <div class="replace">
+                        <span class="label">Thay thế</span>
+                        <input type="text" class="replace__input" placeholder="Thay thế tất cả từ đã tìm">
+                        <div class="btn replace__btn">Thay thế</div>
+                    </div>
+
+                    <div class="note">
+                        <ul class="note__list">
+                            <li class="note__item">
+                                <i class="fa-solid fa-a"></i>
+                                Chuyển tiêu đề thành chữ in hoa (Chọn tiêu đề / đặt con trỏ chuột ở cuối tiêu đề).
+                            </li>
+                            <li class="note__item">
+                                <i class="fa-regular fa-copy"></i>
+                                Sao chép toàn bộ bài viết.
+                            </li>
+                            <li class="note__item">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                Download bài viết.
+                            </li>
+                            <li class="note__item">
+                                <i class="fa-solid fa-icons"></i>
+                                Chèn emoji (Chọn emoji để thay thế văn bản đã chọn hoặc thêm emoji vào
+                                vị trí con trỏ chuột).
+                            </li>
+                            <li class="note__item">
+                                <i class="fa-solid fa-link"></i>
+                                Rút gọn link (Nhấn Rút gọn để rút gọn link và tự động sao chép link đã rút gọn).
+                            </li>
+                            <li class="note__item">
+                                <i class="fa-regular fa-clipboard"></i>
+                                Tìm kiếm và thay thế (Nhấn Tìm kiếm để tìm từ và nhấn Thay thế để từ đã chọn).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
